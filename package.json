@@ -1,0 +1,10 @@
+{
+  "name": "handsbrew-forte-website",
+  "version": "1.0.0",
+  "description": "Website for Handsbrew Forte Limited",
+  "scripts": {
+    "dev": "npx serve ."
+  },
+  "author": "",
+  "license": "ISC"
+}
