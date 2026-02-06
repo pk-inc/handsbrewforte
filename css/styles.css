@@ -66,9 +66,9 @@ img {
 }
 
 .container {
-    max-width: var(--container-width);
-    margin: 0 auto;
-    padding: 0 20px;
+    max-width: 1300px;
+    margin-inline: auto;
+    padding-inline: clamp(16px, 4vw, 32px);
 }
 
 h1,
@@ -81,11 +81,11 @@ h4 {
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 /* --- Buttons --- */
