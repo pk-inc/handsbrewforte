@@ -71,7 +71,8 @@
     <!-- Top Bar -->
     <div
         class="bg-secondary text-white text-sm py-3 px-[clamp(16px,4vw,32px)] border-b border-white/10 dark:border-slate-800">
-        <div class="max-w-[1300px] mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+        <div
+            class="max-w-[1300px] mx-auto px-[clamp(16px,4vw,32px)] flex flex-col sm:flex-row justify-between items-center gap-2">
             <div class="flex items-center space-x-4">
                 <span class="flex items-center gap-1"><i class="material-icons text-sm">email</i>
                     info@handsbrew.com.ng</span>
@@ -79,44 +80,42 @@
                     8192</span>
             </div>
             <div class="flex items-center space-x-3">
-                <a class="hover:text-slate-200 transition" href="#"><i class="material-icons text-sm">facebook</i></a>
-                <a class="hover:text-slate-200 transition" href="#"><i class="material-icons text-sm">public</i></a>
-                <a class="hover:text-slate-200 transition" href="#"><i class="material-icons text-sm">camera_alt</i></a>
+                <a class="hover:opacity-80 transition flex items-center" href="#">
+                    <img src="icons8-facebook.svg" alt="Facebook" class="w-7 h-7 invert brightness-0">
+                </a>
+                <a class="hover:opacity-80 transition flex items-center" href="#">
+                    <img src="icons8-twitter.svg" alt="Twitter" class="w-7 h-7 invert brightness-0">
+                </a>
+                <a class="hover:opacity-80 transition flex items-center" href="#">
+                    <img src="icons8-instagram.svg" alt="Instagram" class="w-7 h-7 invert brightness-0">
+                </a>
             </div>
         </div>
     </div>
 
     <!-- Navigation -->
     <header
-        class="sticky top-0 z-50 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 shadow-sm">
+        class="sticky top-0 z-50 bg-[#2b426b] backdrop-blur-md border-b border-slate-200 dark:border-slate-800 shadow-sm">
         <div class="max-w-[1300px] mx-auto px-[clamp(16px,4vw,32px)]">
             <div class="flex justify-between items-center h-20">
                 <div class="flex-shrink-0 flex items-center gap-2">
-                    <div
-                        class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-white font-display font-bold text-xl">
-                        HB</div>
+                    <img src="HB logo white.png" alt="Handsbrew Logo" class="h-12 w-auto object-contain">
                     <div class="flex flex-col">
-                        <span
-                            class="text-xl font-display font-bold text-primary dark:text-white leading-none">Handsbrew</span>
-                        <span class="text-xs text-secondary font-medium tracking-widest uppercase">Forte Limited</span>
+                        <span class="text-xl font-display font-bold text-white leading-none">Handsbrew</span>
                     </div>
                 </div>
                 <nav class="hidden md:flex space-x-8 items-center">
-                    <a class="text-slate-900 dark:text-white font-medium hover:text-secondary transition"
-                        href="#">Home</a>
-                    <a class="text-slate-600 dark:text-slate-300 font-medium hover:text-secondary dark:hover:text-white transition"
-                        href="#about">About Us</a>
-                    <a class="text-slate-600 dark:text-slate-300 font-medium hover:text-secondary dark:hover:text-white transition"
-                        href="#products">Products</a>
-                    <a class="text-slate-600 dark:text-slate-300 font-medium hover:text-secondary dark:hover:text-white transition"
+                    <a class="text-white font-medium hover:text-slate-200 transition" href="#">Home</a>
+                    <a class="text-white font-medium hover:text-slate-200 transition" href="#about">About Us</a>
+                    <a class="text-white font-medium hover:text-slate-200 transition" href="#products">Products</a>
+                    <a class="text-white font-medium hover:text-slate-200 transition"
                         href="calculator.html">Calculator</a>
-                    <a class="text-slate-600 dark:text-slate-300 font-medium hover:text-secondary dark:hover:text-white transition"
-                        href="contact.html">Contact</a>
+                    <a class="text-white font-medium hover:text-slate-200 transition" href="contact.html">Contact</a>
                     <a class="bg-primary hover:bg-slate-800 text-white px-5 py-2.5 rounded-md font-medium transition shadow-lg shadow-primary/30"
                         href="application/loan.html">Sign In</a>
                 </nav>
                 <div class="md:hidden flex items-center">
-                    <button class="text-slate-600 dark:text-white hover:text-primary">
+                    <button class="text-white hover:text-slate-200">
                         <i class="material-icons text-3xl">menu</i>
                     </button>
                 </div>
@@ -136,7 +135,7 @@
             class="relative max-w-[1300px] mx-auto px-[clamp(16px,4vw,32px)] flex flex-col md:flex-row items-center gap-12">
             <div class="md:w-1/2 text-center md:text-left z-10">
                 <!-- New Hero Design Implementation -->
-                <h1 style="font-family: 'Inter', sans-serif; color: #203A5F; line-height: 1.2; margin-bottom: 20px;"
+                <h1 style="font-family: 'Inter', sans-serif; color: #203A5F; line-height: 1.2; margin-bottom: 12px;"
                     class="text-3xl sm:text-4xl md:text-5xl dark:text-white font-bold">
                     Helping Individuals & <br class="hidden sm:block" /> Businesses access <br
                         class="hidden sm:block" />

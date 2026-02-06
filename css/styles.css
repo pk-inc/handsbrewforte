@@ -22,6 +22,7 @@
 
     /* Typography */
     --font-primary: 'Inter', system-ui, sans-serif;
+    --font-display: 'Inter', system-ui, sans-serif;
 
     /* Component Defaults */
     --border-radius-pill: 50px;
@@ -30,9 +31,8 @@
     --shadow-card: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 
     /* Layout */
-    --container-width: 1200px;
+    --container-width: 1300px;
     --header-height: 100px;
-    /* Increased for pill space */
     --transition: all 0.3s ease;
 }
 
