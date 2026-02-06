@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Handsbrew Forte Limited - Modern Financial Services</title>
+    <title>Handsbrew Forte - Savings | Loans | Investments</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
@@ -94,25 +94,20 @@
     </div>
 
     <!-- Navigation -->
-    <header
-        class="sticky top-0 z-50 bg-[#2b426b] backdrop-blur-md border-b border-slate-200 dark:border-slate-800 shadow-sm">
+    <header id="main-header"
+        class="sticky top-0 z-50 bg-[#2b426b] backdrop-blur-md border-b border-slate-200 dark:border-slate-800 shadow-sm transition-all duration-300 w-full">
         <div class="max-w-[1300px] mx-auto px-[clamp(16px,4vw,32px)]">
-            <div class="flex justify-between items-center h-20">
+            <div class="flex justify-between items-center h-16">
                 <div class="flex-shrink-0 flex items-center gap-2">
                     <img src="HB logo white.png" alt="Handsbrew Logo" class="h-12 w-auto object-contain">
-                    <div class="flex flex-col">
-                        <span class="text-xl font-display font-bold text-white leading-none">Handsbrew</span>
-                    </div>
+                    <span class="text-3xl font-display font-bold text-white leading-none">HANDSBREW</span>
                 </div>
                 <nav class="hidden md:flex space-x-8 items-center">
-                    <a class="text-white font-medium hover:text-slate-200 transition" href="#">Home</a>
                     <a class="text-white font-medium hover:text-slate-200 transition" href="#about">About Us</a>
-                    <a class="text-white font-medium hover:text-slate-200 transition" href="#products">Products</a>
-                    <a class="text-white font-medium hover:text-slate-200 transition"
-                        href="calculator.html">Calculator</a>
-                    <a class="text-white font-medium hover:text-slate-200 transition" href="contact.html">Contact</a>
-                    <a class="bg-primary hover:bg-slate-800 text-white px-5 py-2.5 rounded-md font-medium transition shadow-lg shadow-primary/30"
-                        href="application/loan.html">Sign In</a>
+                    <a class="text-white font-medium hover:text-slate-200 transition" href="#products">Services</a>
+                    <a class="text-white font-medium hover:text-slate-200 transition" href="savings.html">Savings</a>
+                    <a class="text-white font-medium hover:text-slate-200 transition" href="loans.html">Loans</a>
+                    <a class="text-white font-medium hover:text-slate-200 transition" href="#blog">Blogs</a>
                 </nav>
                 <div class="md:hidden flex items-center">
                     <button class="text-white hover:text-slate-200">
@@ -124,53 +119,44 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="relative bg-pattern-light dark:bg-pattern-dark pt-6 pb-16 overflow-hidden">
+    <section class="relative pt-20 pb-24 overflow-hidden bg-cover bg-center bg-no-repeat"
+        style="background-image: url('hero image.png');">
+        <!-- Dark Overlay -->
+        <div class="absolute inset-0 bg-black/60"></div>
+
         <div
-            class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-blue-100 dark:bg-blue-900/20 rounded-full blur-3xl opacity-50">
-        </div>
-        <div
-            class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 bg-red-100 dark:bg-red-900/10 rounded-full blur-3xl opacity-50">
-        </div>
-        <div
-            class="relative max-w-[1300px] mx-auto px-[clamp(16px,4vw,32px)] flex flex-col md:flex-row items-center gap-12">
-            <div class="md:w-1/2 text-center md:text-left z-10">
+            class="relative max-w-[1300px] mx-auto px-[clamp(16px,4vw,32px)] flex flex-col md:flex-row items-center gap-12 h-full">
+            <div class="md:w-3/4 text-center md:text-left z-10">
                 <!-- New Hero Design Implementation -->
-                <h1 style="font-family: 'Inter', sans-serif; color: #203A5F; line-height: 1.2; margin-bottom: 12px;"
-                    class="text-3xl sm:text-4xl md:text-5xl dark:text-white font-bold">
+                <h1 style="font-family: 'Inter', sans-serif; line-height: 1.2; margin-bottom: 12px;"
+                    class="text-3xl sm:text-4xl md:text-5xl text-white font-bold">
                     Helping Individuals & <br class="hidden sm:block" /> Businesses access <br
                         class="hidden sm:block" />
-                    <span class="text-secondary">Smart Financial Solutions.</span>
+                    <span class="text-white">Smart Financial Solutions.</span>
                 </h1>
 
-                <p style="font-family: 'Inter', sans-serif; color: #4A5568; margin-bottom: 28px;"
-                    class="text-base md:text-lg font-semibold tracking-widest dark:text-slate-300 uppercase">
+                <p style="font-family: 'Inter', sans-serif; margin-bottom: 28px;"
+                    class="text-base md:text-lg font-semibold tracking-widest text-white uppercase">
                     TRUSTED. TRANSPARENT. RELIABLE
                 </p>
 
                 <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-6 items-center">
-                    <a href="application/loan.html" style="background-color: #0066CC; border-radius: 50px;"
-                        class="text-white px-8 py-3.5 font-bold uppercase flex items-center gap-2 hover:bg-blue-700 transition shadow-lg inline-block">
+                    <a href="application/loan.html" style="border-radius: 50px;"
+                        class="bg-white text-secondary px-8 py-3.5 font-bold uppercase flex items-center gap-2 hover:bg-slate-100 transition shadow-lg inline-block">
                         Loans <i class="material-icons text-sm">arrow_forward</i>
                     </a>
-                    <a href="calculator.html"
-                        style="color: #203A5F; font-family: 'Inter', sans-serif; font-weight: 700;"
-                        class="hover:underline flex items-center gap-2 text-lg dark:text-blue-300">
+                    <a href="calculator.html" style="font-family: 'Inter', sans-serif; font-weight: 700;"
+                        class="text-white hover:text-slate-200 flex items-center gap-2 text-lg hover:underline">
                         Loan Calculator <i class="material-icons text-sm">arrow_forward</i>
                     </a>
                 </div>
             </div>
-            <div class="md:w-1/2 relative hidden md:block">
-                <!-- abstract visual for growth -->
-                <div class="relative w-full aspect-square max-w-md mx-auto">
-                    <div
-                        class="absolute inset-0 bg-gradient-to-tr from-secondary/20 to-primary/20 rounded-full blur-2xl animate-pulse">
-                    </div>
-                    <img src="https://images.unsplash.com/photo-1565514020176-db7936a7d789?auto=format&fit=crop&q=80&w=800"
-                        alt="Financial Growth"
-                        class="relative rounded-2xl shadow-2xl skew-y-3 transform hover:skew-y-0 transition duration-700 object-cover h-full w-full border-4 border-white dark:border-slate-800">
-                </div>
-            </div>
+            <!-- Removed Abstract Visual -->
         </div>
+    </section>
+    </div>
+    </div>
+    </div>
     </section>
 
     <!-- Trust Indicators (Logo Strip) -->
@@ -600,6 +586,20 @@
         }
     </script>
 
+    <script>
+        window.addEventListener('scroll', function () {
+            const header = document.getElementById('main-header');
+            if (window.scrollY > 20) {
+                // Floating Pill State
+                header.classList.remove('w-full', 'top-0', 'border-b');
+                header.classList.add('max-w-[95%]', 'md:max-w-[1200px]', 'mx-auto', 'rounded-full', 'top-4', 'shadow-2xl', 'left-0', 'right-0', 'border', 'border-white/10');
+            } else {
+                // Default State
+                header.classList.add('w-full', 'top-0', 'border-b');
+                header.classList.remove('max-w-[95%]', 'md:max-w-[1200px]', 'mx-auto', 'rounded-full', 'top-4', 'shadow-2xl', 'left-0', 'right-0', 'border', 'border-white/10');
+            }
+        });
+    </script>
 </body>
 
 </html>
