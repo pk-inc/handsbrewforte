@@ -4,8 +4,31 @@
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Handsbrew Forte - Savings | Loans | Investments</title>
+
+    <!-- SEO Meta Tags -->
+    <title>Handsbrew Forte - Trusted Savings & Loans in Ibadan | Licensed Financial Institution</title>
+    <meta name="description"
+        content="Handsbrew Forte Limited offers secure savings plans and affordable loans in Ibadan since 2014. Licensed by Oyo State Government. Your trusted partner for financial growth." />
+    <meta name="keywords"
+        content="savings, loans, Ibadan, financial services, microfinance, Handsbrew Forte, Oyo State" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://handsbrewforte.com/" />
+    <meta property="og:title" content="Handsbrew Forte - Your Trusted Financial Partner" />
+    <meta property="og:description"
+        content="Secure savings plans and affordable loans in Ibadan since 2014. Building financial futures together." />
+    <meta property="og:image" content="https://handsbrewforte.com/hero%20image.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://handsbrewforte.com/" />
+    <meta property="twitter:title" content="Handsbrew Forte - Your Trusted Financial Partner" />
+    <meta property="twitter:description" content="Secure savings plans and affordable loans in Ibadan since 2014." />
+    <meta property="twitter:image" content="https://handsbrewforte.com/hero%20image.png" />
+
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="canonical" href="https://handsbrewforte.com/" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
@@ -66,8 +89,8 @@
     </style>
 </head>
 
-<body
-    class="font-sans text-slate-600 dark:text-slate-300 bg-background-light dark:bg-background-dark antialiased transition-colors duration-300">
+<body id="top"
+    class="font-sans text-slate-600 dark:text-slate-300 bg-slate-50 dark:bg-slate-950 antialiased transition-colors duration-300">
 
     <!-- Top Bar -->
     <div
@@ -99,10 +122,11 @@
         class="sticky top-0 z-50 bg-[#2b426b] backdrop-blur-md border-b border-slate-200 dark:border-slate-800 shadow-sm transition-all duration-300 w-full">
         <div class="max-w-[1300px] mx-auto px-[clamp(16px,4vw,32px)]">
             <div class="flex justify-between items-center h-16">
-                <div class="flex-shrink-0 flex items-center gap-2">
-                    <img src="HB logo white.png" alt="Handsbrew Logo" class="h-12 w-auto object-contain">
+                <a href="index.html" class="flex-shrink-0 flex items-center gap-2 hover:opacity-90 transition"
+                    aria-label="Handsbrew Forte Home">
+                    <img src="HB logo white.png" alt="Handsbrew Forte Logo" class="h-12 w-auto object-contain">
                     <span class="text-3xl font-display font-bold text-white leading-none">HANDSBREW</span>
-                </div>
+                </a>
                 <nav class="hidden md:flex space-x-8 items-center">
                     <a class="text-white font-medium hover:text-slate-200 transition" href="#about">About Us</a>
                     <a class="text-white font-medium hover:text-slate-200 transition" href="#products">Services</a>
@@ -111,13 +135,64 @@
                     <a class="text-white font-medium hover:text-slate-200 transition" href="#blog">Blogs</a>
                 </nav>
                 <div class="md:hidden flex items-center">
-                    <button class="text-white hover:text-slate-200">
+                    <button id="mobile-menu-button"
+                        class="text-white hover:text-slate-200 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#2b426b]"
+                        aria-label="Toggle mobile menu" aria-expanded="false">
                         <i class="material-icons text-3xl">menu</i>
                     </button>
                 </div>
             </div>
         </div>
     </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed inset-0 z-40 hidden">
+        <!-- Overlay -->
+        <div id="mobile-menu-overlay" class="absolute inset-0 bg-black/60 backdrop-blur-sm transition-opacity"></div>
+
+        <!-- Menu Panel -->
+        <div id="mobile-menu-panel"
+            class="absolute top-0 right-0 h-full w-64 bg-[#2b426b] shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out">
+            <div class="flex flex-col h-full">
+                <!-- Close Button -->
+                <div class="flex justify-end p-4 border-b border-white/10">
+                    <button id="mobile-menu-close"
+                        class="text-white hover:text-slate-200 focus:outline-none focus:ring-2 focus:ring-white"
+                        aria-label="Close mobile menu">
+                        <i class="material-icons text-3xl">close</i>
+                    </button>
+                </div>
+
+                <!-- Navigation Links -->
+                <nav class="flex-1 px-4 py-6 space-y-4">
+                    <a class="block text-white font-medium hover:text-slate-200 transition py-2 px-4 rounded hover:bg-white/10"
+                        href="index.html">Home</a>
+                    <a class="block text-white font-medium hover:text-slate-200 transition py-2 px-4 rounded hover:bg-white/10"
+                        href="#about">About Us</a>
+                    <a class="block text-white font-medium hover:text-slate-200 transition py-2 px-4 rounded hover:bg-white/10"
+                        href="#products">Services</a>
+                    <a class="block text-white font-medium hover:text-slate-200 transition py-2 px-4 rounded hover:bg-white/10"
+                        href="savings.html">Savings</a>
+                    <a class="block text-white font-medium hover:text-slate-200 transition py-2 px-4 rounded hover:bg-white/10"
+                        href="loans.html">Loans</a>
+                    <a class="block text-white font-medium hover:text-slate-200 transition py-2 px-4 rounded hover:bg-white/10"
+                        href="#blog">Blogs</a>
+                </nav>
+
+                <!-- Contact Info -->
+                <div class="p-4 border-t border-white/10 text-white text-sm">
+                    <p class="flex items-center gap-2 mb-2">
+                        <i class="material-icons text-sm">phone</i>
+                        <span>+234 810 554 8192</span>
+                    </p>
+                    <p class="flex items-center gap-2">
+                        <i class="material-icons text-sm">email</i>
+                        <span>info@handsbrew.com.ng</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Hero Section -->
     <section class="relative pt-20 pb-24 overflow-hidden bg-cover bg-top bg-no-repeat bg-fixed min-h-[74.5vh]"
@@ -431,7 +506,7 @@
 
             <div class="text-center mt-12">
                 <a href="savings.html"
-                    class="text-secondary font-medium hover:text-white hover:underline transition">View All
+                    class="text-white font-medium hover:text-secondary hover:underline transition">View All
                     Products</a>
             </div>
         </div>
@@ -830,9 +905,16 @@
                 </div>
             </div>
 
-            <!-- Copyright -->
-            <div class="border-t border-slate-900 mt-8 pt-6 text-center text-sm">
-                <p>© 2026 Handsbrew Forte Limited. All Rights Reserved.</p>
+            <!-- Legal Links -->
+            <div class="border-t border-slate-900 mt-8 pt-6">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+                    <p>© 2026 Handsbrew Forte Limited. All Rights Reserved.</p>
+                    <div class="flex gap-6">
+                        <a href="#" class="hover:text-white transition">Privacy Policy</a>
+                        <a href="#" class="hover:text-white transition">Terms of Service</a>
+                        <a href="#" class="hover:text-white transition">Cookie Policy</a>
+                    </div>
+                </div>
             </div>
         </div>
         <a class="fixed bottom-6 right-6 z-50 bg-green-600 text-white p-3 rounded-full shadow-xl hover:bg-green-700 transition flex items-center justify-center w-14 h-14"
