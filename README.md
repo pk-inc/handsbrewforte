@@ -44,7 +44,7 @@ handsbrewforte/
 ├── public/                 # Static assets
 │   ├── HB logo white.png
 │   ├── HB logo color.png
-│   ├── hero image.png
+│   ├── hero-bg.png
 │   ├── favicon.svg
 │   └── icons8-*.svg        # Social media icons
 ├── package.json
@@ -75,7 +75,7 @@ handsbrewforte/
    Copy all image files and icons from the root directory to the `public/` folder:
    - `HB logo white.png`
    - `HB logo color.png`
-   - `hero image.png`
+   - `hero-bg.png`
    - `favicon.svg`
    - `icons8-*.svg` (all social media icons)
 

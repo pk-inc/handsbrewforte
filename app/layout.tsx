@@ -5,12 +5,12 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import WhatsAppFloat from '@/components/WhatsAppFloat'
 
-const inter = Inter({ 
+const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
 })
 
-const playfair = Playfair_Display({ 
+const playfair = Playfair_Display({
   subsets: ['latin'],
   weight: ['500', '600', '700', '800'],
   variable: '--font-playfair',
@@ -25,13 +25,13 @@ export const metadata: Metadata = {
     url: 'https://handsbrewforte.com/',
     title: 'Handsbrew Forte - Your Trusted Financial Partner',
     description: 'Secure savings plans and affordable loans in Ibadan since 2014. Building financial futures together.',
-    images: ['/hero image.png'],
+    images: ['/hero-bg.png'],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Handsbrew Forte - Your Trusted Financial Partner',
     description: 'Secure savings plans and affordable loans in Ibadan since 2014.',
-    images: ['/hero image.png'],
+    images: ['/hero-bg.png'],
   },
 }
 

@@ -4,8 +4,8 @@ import Image from 'next/image'
 export default function Hero() {
   return (
     <section
-      className="relative pt-20 pb-24 overflow-hidden bg-cover bg-top bg-no-repeat bg-fixed min-h-[74.5vh]"
-      style={{ backgroundImage: "url('/hero image.png')" }}
+      className="relative pt-20 pb-24 overflow-hidden bg-cover bg-center bg-no-repeat bg-scroll md:bg-fixed min-h-[74.5vh]"
+      style={{ backgroundImage: "url('/hero-bg.png')" }}
     >
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black/60" />
@@ -54,9 +54,9 @@ export default function Hero() {
             <div className="block w-px h-10 bg-white/20" />
             <div className="text-center flex-1 md:flex-none">
               <p className="text-[0.7rem] sm:text-sm font-medium text-white/80 uppercase tracking-wide leading-tight">
-                Return Rates
+                Return Rates P.A
               </p>
-              <p className="text-xl sm:text-3xl font-bold text-white">~15%p.a</p>
+              <p className="text-xl sm:text-3xl font-bold text-white">~15%</p>
             </div>
             <div className="block w-px h-10 bg-white/20" />
             <div className="text-center flex-1 md:flex-none">
